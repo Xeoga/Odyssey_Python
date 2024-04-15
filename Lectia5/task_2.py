@@ -38,35 +38,34 @@ print(numbers[0:2])
 
 # Afișeați ultimele două elemente din tuple `numbers`
 # CODUL TĂU VINE MAI JOS:
-
+print(*numbers[-2:])
 # CODUL TĂU VINE MAI SUS:
 
 # Afișați lungimea tuple `numbers`
 # CODUL TĂU VINE MAI JOS:
-
+print(len(numbers))
 # CODUL TĂU VINE MAI SUS:
 
 # Afișați suma elementelor din tuple `numbers`
 # CODUL TĂU VINE MAI JOS:
-
+print(sum(numbers))
 # CODUL TĂU VINE MAI SUS:
 
 # Schibați elementul de la poziția 2 din tuple `numbers` cu 10
-
 # CODUL TĂU VINE MAI JOS:
-
+l = list(numbers)
+l[2] = 10
+numbers = tuple(l)
 # CODUL TĂU VINE MAI SUS:
 
 # Afișați tuple `numbers`
-
 # CODUL TĂU VINE MAI JOS:
-
+print(type(numbers), "-->", *numbers)
 # CODUL TĂU VINE MAI SUS:
 
 # Ștergeți tuple `numbers`
-
 # CODUL TĂU VINE MAI JOS:
-
+del(numbers)
 # CODUL TĂU VINE MAI SUS:
 
 # Asta a fost tot, ai terminat prima ta sarcină legată de liste
