@@ -43,52 +43,58 @@ numbers_set.discard(100) #daca avem sa folosim .remove(100) va returna o eroare
 
 # Verificați dacă numărul 3 există în setul `numbers_set`
 # CODUL TĂU VINE MAI JOS:
-
+print('Yes' if 3 in numbers_set else 'No')
 # CODUL TĂU VINE MAI SUS:
 
 # Verificați elementele comune din setul `numbers_set` și setul {4, 5, 6, 7}
 # CODUL TĂU VINE MAI JOS:
 
+setul = {4, 5, 6, 7}
+print("Setul 1->", numbers_set)
+print("Setul 2->", setul)
+interaction_set = numbers_set.intersection(setul)
+print("Intersectia seturilor:", interaction_set)
 # CODUL TĂU VINE MAI SUS:
 
 # Verificați elementele diferite din setul `numbers_set` și setul {4, 5, 6, 7}
 # CODUL TĂU VINE MAI JOS:
-
+print("Diferenta dintre seturi -> ",numbers_set.difference(setul))
 # CODUL TĂU VINE MAI SUS:
 
 # Verificați dacă setul `numbers_set` este un subset al setului {1, 2, 3, 4, 5, 6, 7}
 # CODUL TĂU VINE MAI JOS:
-
+setului = {1, 2, 3, 4, 5, 6, 7}
+print(f"Este {numbers_set} un subset al lui {setului}: {numbers_set.issubset(setului)}")
 # CODUL TĂU VINE MAI SUS:
 
 # Verificați dacă setul {1, 2, 3, 4, 5, 6, 7} este un subset al setului `numbers_set`
 # CODUL TĂU VINE MAI JOS:
-
+print(f"Este {setului} un subset al lui {numbers_set}: {setului.issubset(numbers_set)}")
 # CODUL TĂU VINE MAI SUS:
 
 # Verificați dacă setul `numbers_set` este un superset al setului {1, 2, 3, 4, 5, 6, 7}
 # CODUL TĂU VINE MAI JOS:
-
+print(f"Este {numbers_set} un super-subset al lui {setului}: {numbers_set.issuperset(setului)}")
 # CODUL TĂU VINE MAI SUS:
 
 # Verificați dacă setul {1, 2, 3, 4, 5, 6, 7} este un superset al setului `numbers_set`
 # CODUL TĂU VINE MAI JOS:
-
+print(f"Este {setului} un subset al lui {numbers_set}: {setului.issuperset(numbers_set)}")
 # CODUL TĂU VINE MAI SUS:
 
 # Afișați lungimea setului `numbers_set`
 # CODUL TĂU VINE MAI JOS:
-
+print(f"Lungimea setului(numbers_set) este: {len(numbers_set)}")
 # CODUL TĂU VINE MAI SUS:
 
 # Ștergeți toate elementele din setul `numbers_set`
 # CODUL TĂU VINE MAI JOS:
-
+numbers_set.clear()
 # CODUL TĂU VINE MAI SUS:
 
 # Afișați setul `numbers_set` pentru a verifica dacă a fost șters
 # CODUL TĂU VINE MAI JOS:
-
+print(numbers_set)
 # CODUL TĂU VINE MAI SUS:
 
 # Asta a fost tot pentru a doua ta sarcină legată de seturi
