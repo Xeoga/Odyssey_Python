@@ -99,18 +99,41 @@ for i in range(1, 11):
 
 # Creează o listă de liste, unde fiecare sub-listă conține perechi (i, j) pentru i și j de la 1 la 5. Printează această listă de perechi.
 # CODUL TĂU VINE MAI JOS:
-
+print('-' * 60)
+li = []
+for i in range(1, 6):
+    temp_li = []
+    for j in range(1, 6):
+        temp_li.append(j)
+    li.append(temp_li)
+print(li)
 # CODUL TĂU VINE MAI SUS:
 
 # Parcurge lista de la punctul anterior și printează doar perechile unde i < j .
 # CODUL TĂU VINE MAI JOS:
-
+print('-' * 60)
+for i in range(0, 5): # Nu e pe inteles sarcina
+    for j in range(0, 5):
+        if li[i] < li[j]:
+            print(li[i])
 # CODUL TĂU VINE MAI SUS:
 
 # Folosind un buclă while , caută și printează prima valoare care este mai mare decât 10 dintr-o listă cu numere random creată de tine.
 # Dacă nu există, printează "Nu există valori mai mari decât 10".
 # CODUL TĂU VINE MAI JOS:
-
+import random 
+random_list = [random.randint(1, 20) for _ in range(10)]
+i= 0
+flag = True
+print(random_list)
+while i < len(random_list):
+    if random_list[i] >= 10:
+        print(f"Aceasta este prima valoare {random_list[i]} care este mai mare de 10, pe indexul {i+1}")
+        flag = False
+        break
+    i+=1
+if flag:
+    print("Nu există valori mai mari decât 10")
 # CODUL TĂU VINE MAI SUS:
 
 # Folosind loop-uri Creează un pătrat de stele ( * ) folosind bucle încadrate. Dimensiunea pătratului va fi citită de la utilizator.
@@ -121,7 +144,7 @@ for i in range(1, 11):
 # *****
 # *****
 # CODUL TĂU VINE MAI JOS:
-print()
+print('-' * 60)
 user_input = int(input("Introduceti nr de *: "))
 for i in range(user_input):
     for j in range(user_input):
@@ -138,6 +161,7 @@ for i in range(user_input):
 # 12345
 # 123456
 # CODUL TĂU VINE MAI JOS: 
+print('-' * 60)
 for i in range(1,8):
     for j in range(1,i):
         print(j,end='')
@@ -151,7 +175,11 @@ for i in range(1,8):
 # 54
 # 5
 # CODUL TĂU VINE MAI JOS:
-
+print('-' * 60)
+for i in range(5, 0, -1):
+    for j in range(i, 0, -1):
+        print(j, end='')
+    print()
 # CODUL TĂU VINE MAI SUS:
 
 # Afișarea 3:
@@ -163,7 +191,12 @@ for i in range(1,8):
 # fg
 # g
 # CODUL TĂU VINE MAI JOS:
-
+print('-' * 60)
+our_str = 'abcdefg'
+for i in range(len(our_str)):
+    print(our_str)
+    # Stergem primul element
+    our_str = our_str[1:]
 # CODUL TĂU VINE MAI SUS:
 
 # Afișarea 4:
@@ -176,7 +209,12 @@ for i in range(1,8):
 # +-+-+-+-+-+-+-+-
 # -+-+-+-+-+-+-+-+
 # CODUL TĂU VINE MAI JOS:
-
+print('-' * 60)
+for i in range(0, 8):
+    if i %2 ==0:
+        print("+-+-+-+-+-+-+-+-")
+    else:
+        print("-+-+-+-+-+-+-+-+")
 # CODUL TĂU VINE MAI SUS:
 
 # Afișarea 5:
@@ -190,7 +228,6 @@ for i in range(1,8):
 # 81 243
 # 243
 # CODUL TĂU VINE MAI JOS:
-
+#Nu am inteles sarcina :(
 # CODUL TĂU VINE MAI SUS:
-
 # Completați sarcinile de mai sus pentru a exersa lucrul cu buclele în Python.
